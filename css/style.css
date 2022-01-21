@@ -1,0 +1,28 @@
+:root{
+    --cl-orange: hsl(26, 100%, 55%);
+    --cl-pale-orange: hsl(25, 100%, 94%);
+    --cl-very-dark-blue: hsl(220,13%,13%);
+    --cl-dark-grayish-blue: hsl(219,9%,45%);
+    --cl-grayish-blue: hsl(220, 14%, 75%);
+    --cl-light-grayish-blue: hsl(223, 64%, 98%);
+    --cl-White: hsl(0, 0%, 100%);
+
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Mobile View -------------------*/
+
+
+/* Desktop View ---------------- */
+@media screen and (min-width: 960px){
+
+}
