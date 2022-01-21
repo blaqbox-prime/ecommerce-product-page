@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>E-commerce product page</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+    />
+    <script src="js/main.js">
+      
+    </script> 
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src=""></script> -->
 
-  <!-- Nav -->
-  <nav class="navbar" id="navbar">
-    <div class="navbar__left">
-      <img src="images/icon-menu.svg" alt="" class="svg-icon menu-icon">
-      <img src="images/logo.svg" alt="" class="branding-logo">
-      <!-- Menu -->
-    </div>
-    <div class="navbar__right">
-      <img src="images/icon-cart.svg" alt="" class="svg-icon cart-icon">
-      <img src="images/image-avatar.png" alt="" class="avatar-icon">
-    </div>
-  </nav>
-  <!-- Main Container -->
+    <title>E-commerce product page</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="navbar__left">
+          <img
+            src="images/icon-menu.svg"
+            alt=""
+            class="svg-icon menu-icon"
+            id="open-menu-icon"
+            onclick="openMenu()"
+          />
+          <img src="images/logo.svg" alt="" class="branding-logo" />
+          <!-- Menu -->
+          <div class="navbar__menu" id="navbar__menu">
+            <ul class="navbar__menu-items">
+              <li class="close-icon-container">
+                <img
+                  src="images/icon-close.svg"
+                  alt=""
+                  class="close-icon svg-icon"
+                  id="close-menu-icon"
+                  onclick="closeMenu()"
+                />
+              </li>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__right">
+          <div class="cart-icon-container">
+            <img src="images/icon-cart.svg" alt="" class="svg-icon cart-icon" />
+          </div>
+          <img src="images/image-avatar.png" alt="" class="avatar-icon" />
+        </div>
+      </div>
+    </nav>
+    <!-- Main Container -->
 
-
-  
-</body>
+    <!-- scripts -->
+  </body>
 </html>
