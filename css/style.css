@@ -19,11 +19,70 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+h1,h2,h3{
+    color: var(--cl-very-dark-blue);
+}
+
+.text-primary{
+    color: var(--cl-orange);
+}
+
+
+p{
+    color: var(--cl-dark-grayish-blue);
+}
+
+.bg-light{
+    background-color: var(--cl-light-grayish-blue);
+}
+
+.bg-primary{
+    background-color: var(--cl-orange);
+}
+
+.bg-primary-light{
+    background-color: var(--cl-pale-orange);
+}
+
+.btn-primary{
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: 0px 0px 6px 12px var(--cl-pale-orange);
+    padding: .5rem 0;
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+svg#primary-btn-cart-icon{
+    margin-right: .8rem;
+    color: #fff;
+}
+
+svg#primary-btn-cart-icon path{
+    fill: #fff;
+}
+
+
+
 /* Mobile View -------------------*/
-.container{
+.container, .container-fluid{
     margin: 0 auto;
     width: 90%;
     height: 100%;
+    max-width: 1200px;
+}
+
+.container-fluid{
+    width: 100%;
+
 }
 
 /* NavBar */
@@ -121,7 +180,119 @@ body{
     width: 1.25rem;
 }
 
-/* Desktop View ---------------- */
+/* Product Images ----------------------------------- */
+
+.product-img-container{
+    height: 300px;
+    width: 100%;
+    background-color: yellow;
+    background-image: url('/images/image-product-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+button{
+    cursor: pointer;
+}
+
+.btn-rounded{
+    background-color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-next, .btn-prev{
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.btn-prev{
+    top: 50%;
+    left: 5%;
+
+}
+
+.btn-next{
+    top: 50%;
+    left: 90%;
+    
+}
+
+.product-thumbnails{
+    display: none;
+}
+
+/* Product Info ---------------------------------- */
+.supplier-title{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    letter-spacing: .2rem;
+}
+
+.sneaker-title{
+    margin-bottom: 1rem;
+}
+
+.sneaker-description{
+    margin-bottom: 1rem;
+}
+
+.pricing-row{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.price span{
+    font-size: .8rem;
+    margin-left: .7rem;
+    background-color: hsla(26, 100%, 55%, .2);
+    padding: .2rem .5rem;
+    border-radius: 5px;
+}
+
+del{
+    color: var(--cl-grayish-blue);
+}
+
+.quantity-selector{
+    margin-bottom: 1rem;
+    height: 60px;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    color: var(--cl-orange);
+}
+
+.quantity-selector .row{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantity-selector i{
+ cursor: pointer;
+}
+
+/* Desktop View ------------------------------------------------------- */
 @media screen and (min-width: 960px){
     /* nav */
     .menu-icon, .close-icon{
@@ -161,5 +332,50 @@ body{
     }
     .navbar__menu-items li{
         
+    }
+
+    nav{
+        margin-bottom: 1rem;
+    }
+ 
+    /* Product Images ----------------------------------- */
+    main{
+        margin: 1rem auto;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2,450px);
+        grid-gap: 3rem;
+    }
+
+    .product-img-container{
+        width: 450px;
+        height: 450px;
+        border-radius: 1rem;;
+    }
+
+    .btn-next, .btn-prev{
+        display: none;
+    }
+
+    .product-thumbnails{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .product-thumbnail{
+        height: 90px;
+        width: 90px;
+        border-radius: 1rem;
+        border: 3px solid transparent;
+    }
+
+    .product-thumbnail.active{
+        border: 3px solid var(--cl-orange);
+    }
+
+    .product-thumbnail:hover{
+        opacity: .5;
     }
 }
