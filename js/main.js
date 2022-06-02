@@ -6,10 +6,10 @@ const desktopGallery = document.getElementById('desktop-gallery');
 const desktopGalleryImage = document.getElementById('desktop-gallery-img');
 const mobileGalleryImage = document.getElementById('product-img-container');
 const productImages = [
-    '/images/image-product-1.jpg',
-    '/images/image-product-2.jpg',
-    '/images/image-product-3.jpg',
-    '/images/image-product-4.jpg',
+    './images/image-product-1.jpg',
+    './images/image-product-2.jpg',
+    './images/image-product-3.jpg',
+    './images/image-product-4.jpg',
 ]
 
 let currentIdx = 1;
